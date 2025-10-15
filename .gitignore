@@ -1,0 +1,35 @@
+# .gitignore
+# -------------------------------------------------------------------
+# General Dependencies
+/node_modules
+/vendor
+/tmp
+/log
+
+# Ruby/Rails Specific
+.DS_Store
+*.swp
+/db/*.sqlite3
+/db/schema.rb
+/db/structure.sql
+/db/*.bak
+/db/*.dump
+/db/seeds.rb
+
+# Docker
+.dockerignore
+/builds
+/volumes
+# Ignore the environment variables file
+.env
+
+# Rails folders (inside api/)
+/api/log/*
+/api/tmp/*
+/api/storage/*
+/api/public/assets
+/api/vendor/bundle
+
+# Client (React/Vite) folders
+/client/dist
+/client/.vite
